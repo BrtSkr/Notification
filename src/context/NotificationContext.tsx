@@ -19,7 +19,7 @@ interface NotificationContextType {
 
 const NotificationContext = createContext<NotificationContextType | undefined>(undefined);
 
-const NOTIFICATIONS_LIFESPAN = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+const NOTIFICATIONS_LIFESPAN = 24 * 60 * 60 * 1000;
 
 const NotificationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [notifications, setNotifications] = useState<Notification[]>(() => {

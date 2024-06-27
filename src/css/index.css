@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   @apply font-primary scroll-smooth subpixel-antialiased;
 }

@@ -11,14 +11,14 @@ const App: React.FC = () => {
     <NotificationProvider>
       <div className="container mx-auto block">
         <Router>
-            <Navbar />
-            <div className="main">
-              <Routes>
-                <Route path="/request" element={<RequestPage />} />
-                <Route path="/status" element={<StatusPage />} />
-                <Route path="/feature" element={<FeaturePage />} />
-              </Routes>
-            </div>
+          <Navbar />
+          <div className="main">
+            <Routes>
+              <Route path="/request" element={<RequestPage />} />
+              <Route path="/status" element={<StatusPage />} />
+              <Route path="/feature" element={<FeaturePage />} />
+            </Routes>
+          </div>
         </Router>
       </div>
     </NotificationProvider>

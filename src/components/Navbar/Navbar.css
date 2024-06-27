@@ -22,7 +22,7 @@
     }
 
     & .navbar__icon {
-        @apply w-8 h-8 cursor-pointer ;
+        @apply w-8 h-8 cursor-pointer;
     }
 
     & .navbar__count {

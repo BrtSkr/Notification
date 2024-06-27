@@ -1,7 +1,7 @@
-*{
+* {
   @apply box-border;
 }
 
-body{
+body {
   @apply bg-slate-800 m-0;
 }
