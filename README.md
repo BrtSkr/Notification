@@ -1,5 +1,9 @@
+# Demo
+* https://667cdcc09927dd53c3c7d180--glistening-cactus-efeb0f.netlify.app
+
 # Details
-* CSS is built with native nesting + tailwind
+* Sample data for notifications is under /src/data/sampleNotificationData
+* CSS is built with native nesting + Tailwind
 * Button All notifications: shows as it says every single notification
 * Button Unread: Shows only notifications that state of read: false
 * Button Mark all as read: Changes state of all notifications to read: true
