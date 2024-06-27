@@ -1,0 +1,39 @@
+.notification {
+    @apply animate-drop-in flex flex-wrap gap-4 md:flex-nowrap md:gap-8 p-4 justify-between items-center rounded-lg transition duration-300 hover:scale-110 hover:bg-slate-200 hover:shadow-md;
+
+    &.read {
+        @apply hover:bg-white;
+    }
+
+    & .notification__link {
+        @apply flex flex-col gap-2 w-full;
+    }
+
+    & .notification__message {
+        @apply text-lg;
+    }
+
+    & .notification__minor-details {
+        @apply flex gap-4 items-end;
+    }
+
+    & .notification__date {
+        @apply text-sm;
+    }
+
+    & .notification__type {}
+
+
+    & .notification__read-btn {
+        @apply p-2 rounded-lg text-black font-semibold transition duration-300 hover:scale-110;
+    }
+
+    & .notification__read-btn--read {
+        @apply animate-jump-in bg-blue-400;
+    }
+
+    & .notification__read-btn--unread {
+        @apply animate-slide-in bg-red-400;
+    }
+
+}

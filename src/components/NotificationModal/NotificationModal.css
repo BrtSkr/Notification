@@ -1,0 +1,29 @@
+.notification-modal {
+    & .notification-modal__header {
+        @apply flex justify-between items-start md:items-center gap-4 border-b-2 pb-4 mb-4;
+    }
+
+    & .notification-modal__filters {
+        @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3; 
+    }
+
+    & .notification-modal__btn {
+        @apply bg-slate-100 p-2 px-4 rounded-lg transition mx-[4px] duration-200 transition hover:scale-105 hover:bg-blue-200;
+    }
+
+    & .notification-modal__btn--active {
+        @apply font-bold bg-blue-400 mx-0 hover:bg-blue-400;
+    }
+
+    & .notification-modal__body {
+        @apply flex flex-col gap-2;
+    }
+
+    & .notification-modal__close {
+        @apply cursor-pointer bg-red-400 rounded-lg transition duration-150 hover:scale-110;
+    }
+
+    & .notification-modal__mark {
+        @apply flex gap-2 items-center text-blue-600 p-2 px-4 rounded-lg transition mx-[4px] duration-200 transition hover:opacity-70 hover:scale-105;
+    }
+}

@@ -1,0 +1,39 @@
+.navbar {
+    @apply sticky top-0 left-0 bg-white p-4 shadow-lg rounded-b-lg z-10 mb-5;
+
+    & .navbar__logo {
+        @apply font-bold text-2xl transition duration-300 cursor-pointer hover:opacity-70;
+    }
+
+    & .navbar__wrapper {
+        @apply flex items-center justify-between;
+    }
+
+    & .navbar__left {
+        @apply font-bold text-2xl;
+    }
+
+    & .navbar__right {
+        @apply sm:relative p-2;
+    }
+
+    & .navbar__icon-wrapper {
+        @apply p-2 rounded-full relative;
+    }
+
+    & .navbar__icon {
+        @apply w-8 h-8 cursor-pointer ;
+    }
+
+    & .navbar__count {
+        @apply absolute text-sm pointer-events-none -top-1 -right-1 flex justify-center items-center text-white bg-blue-400 rounded-full w-4 h-4 ml-2;
+    }
+
+    & .navbar__modal {
+        @apply absolute shadow-xl p-4 mr-4 w-full max-w-md sm:mr-0 sm:min-w-max sm:max-w-max rounded-xl border-none border-2 top-full mt-6 right-0 bg-white scale-y-0 opacity-0 duration-300 ease-in-out transition origin-top;
+    }
+
+    & .navbar__modal--open {
+        @apply scale-y-100 opacity-100;
+    }
+}
